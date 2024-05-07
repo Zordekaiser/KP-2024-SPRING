@@ -1,0 +1,149 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    
+- intent: define_word
+  examples: |
+    - [Что такое]{"entity":"question","value":"what"} [машина](word)?
+    - [что такое]{"entity":"question","value":"what"} [определитель матрицы](word)
+    - [что такое]{"entity":"question","value":"what"} [книга](word)?
+    - [Поясни за]{"entity":"question","value":"what"} [стул](word).
+    - [расскажи о]{"entity":"question","value":"what"} [курице](word)
+    - [расскажи об]{"entity":"question","value":"what"} [организованной автомобильной колонне](word), пожалуйста.
+    - [расскажи о]{"entity":"question","value":"what"} [картофельном пюре](word)
+    - [Пожалуйста, объясните мне понятие]{"entity":"question","value":"what"} [машына](word).
+    - [Пожалуйста, объясните мне понятие]{"entity":"question","value":"what"} [чЕловек](word).
+    - [Пожалуйста, объясните мне понятие]{"entity":"question","value":"what"} [Биология](word).
+    - [шо такое]{"entity":"question","value":"what"} [ядерный реактор](word)?
+    - [шо такое]{"entity":"question","value":"what"} [дерево](word)
+    - [шо такое]{"entity":"question","value":"what"} [транспортное средство](word)
+    - [шо такое]{"entity":"question","value":"what"} [вес вершины графа](word)?
+    - [Что такое]{"entity":"question","value":"what"} [квантовая механика](word)?
+    - [Что такое]{"entity":"question","value":"what"} [инфляция в экономике](word)?
+    - [Пожалуйста, объясните мне понятие]{"entity":"question","value":"what"} [фотосинтеза](word).
+    - [Что такое]{"entity":"question","value":"what"} [биоразнообразие](word)?
+    - [Что такое]{"entity":"question","value":"what"} [программирование на Python](word)?
+    - [Расскажите о]{"entity":"question","value":"what"} [теории относительности](word).
+    - [Что такое]{"entity":"question","value":"what"} [искусственный интеллект](word)?
+    - [Пожалуйста, объясните мне понятие]{"entity":"question","value":"what"} [глобального потепления](word).
+    - [Что такое]{"entity":"question","value":"what"} [криптовалюта](word)?
+    - [Что такое]{"entity":"question","value":"what"} [генетический код](word)?
+    - [Что такое]{"entity":"question","value":"what"} [социальная справедливость](word)?
+    - [Пожалуйста, объясните мне]{"entity":"question","value":"what"} [понятие кварк](word).
+    - [Что такое]{"entity":"question","value":"what"} [программирование на Java](word)?
+    - [Что такое]{"entity":"question","value":"what"} [экологический след](word)?
+    - [Что такое]{"entity":"question","value":"what"} [космический мусор](word)?
+    - [Пожалуйста, объясните мне понятие]{"entity":"question","value":"what"} [пандемия](word).
+    - [Что такое]{"entity":"question","value":"what"} [квантовый компьютер](word)?
+    - [Что такое]{"entity":"question","value":"what"} [социальные сети](word)?
+    - [Что такое]{"entity":"question","value":"what"} [гравитация](word)?
+    - [Что такое]{"entity":"question","value":"what"} [программирование на C++](word)?
+    - Как мне лучше управлять своим временем?
+    - [Что делать, если]{"entity":"question","value":"choice_question"} я чувствую себя уставшим и измотанным?
+    - [Как преодолеть]{"entity":"question","value":"choice_question"} страх перед публичными выступлениями?
+    - [Что посоветуете]{"entity":"question","value":"choice_question"} начинающему предпринимателю?
+    - [Как сохранить]{"entity":"question","value":"choice_question"} спокойствие в стрессовых ситуациях?
+    - [Как]{"entity":"question","value":"choice_question"} выбрать подходящую карьеру?
+    - [Что делать, если]{"entity":"question","value":"choice_question"} я не могу принять важное решение?
+    - [Как разрешить]{"entity":"question","value":"choice_question"} конфликт с коллегой?
+    - [Как научиться]{"entity":"question","value":"choice_question"} эффективно общаться с людьми?
+    - [Что посоветуете]{"entity":"question","value":"choice_question"} тем, кто хочет начать заниматься спортом?
+    - [Как преодолеть]{"entity":"question","value":"choice_question"} лень и найти мотивацию?
+    - [Что делать, если]{"entity":"question","value":"choice_question"} я чувствую себя одиноко?
+    - [Как справиться с]{"entity":"question","value":"choice_question"} негативными мыслями?
+    - [Что посоветуете тем, кто хочет]{"entity":"question","value":"choice_question"} научиться готовить?
+    - [Как развить]{"entity":"question","value":"choice_question"} свои профессиональные навыки?
+    - [Что делать, если]{"entity":"question","value":"choice_question"} я не могу преодолеть свои страхи?
+    - [Как научиться]{"entity":"question","value":"choice_question"} управлять финансами?
+    - [Что посоветуете тем, кто хочет]{"entity":"question","value":"choice_question"} путешествовать?
+    - [Как сохранить]{"entity":"question","value":"choice_question"} баланс между работой и личной жизнью?
+    - [Что делать, если]{"entity":"question","value":"choice_question"} я чувствую себя несчастным?
+    
