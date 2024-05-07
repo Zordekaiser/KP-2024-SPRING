@@ -1,5 +1,13 @@
 # KP-2024-SPRING
 
+# RASA Open Source
+
+## Установка
+Открыть терминал в папке rasaOpenSource и выполнить команды pip install rasa и rasa train
+
+## Использование
+Открыть терминал в папке rasaOpenSource и выполнить команду rasa run
+
 # Message Classification Agent
 
 ## Описание
